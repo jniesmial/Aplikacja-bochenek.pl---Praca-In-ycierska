@@ -1,0 +1,71 @@
+:root {
+    --primary: #B6571E;
+    --dark-primary: #53290F;
+    --off-white: #F9F9F9;
+    --szary: #686868;
+}
+
+.box {
+    padding-top: 50px;
+    min-height: 80vh;
+}
+
+.koszyk {
+    /* height: auto; */
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px 30px;
+    margin: 0 20px 30px;
+    text-align: center;
+}
+
+.koszyk h1 {
+    color: var(--primary);
+    letter-spacing: 0.02em;
+}
+
+table {
+    color: var(--dark-primary);
+    width: 100%;
+    text-align: left;
+}
+
+#suma {
+    margin-top: 10px;
+    border-top: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 20px;
+    text-align: right;
+    padding: 20px;
+    width: auto;
+}
+
+.koszyk_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.kosz-btn1 , .kosz-btn2{
+    font-size: 18px;
+    min-width: 200px;
+    border: none;
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 14px;
+    color: var(--off-white);
+}
+
+.kosz-btn1:hover , .kosz-btn2:hover{
+    background-color: var(--dark-primary);
+}
+
+@media (max-width: 574px){
+    .koszyk_btns{
+        justify-content: center;
+    }
+}

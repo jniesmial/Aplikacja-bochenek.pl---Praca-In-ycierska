@@ -1,0 +1,90 @@
+:root {
+    --primary: #B6571E;
+    --dark-primary: #53290F;
+    --off-white: #F9F9F9;
+    --szary: #686868;
+}
+
+.koszyk-potwierdzenie * {
+    box-sizing: border-box; 
+}
+
+.koszyk-potwierdzenie {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px 30px;
+    margin: 0 20px 30px;
+    text-align: center;
+
+    min-height: 50vh;
+}
+
+.koszyk-potwierdzenie h1{
+    color: var(--primary);
+    letter-spacing: 0.02em;
+}
+
+.columns {
+    color: var(--dark-primary);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    align-items: top;
+}
+
+.left, .right {
+    flex: 1 1 calc(50% - 20px);
+    padding: 0 40px 0 40px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.potwierdzenie-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.pot-btn1 , .pot-btn2{
+    text-align: center;
+    text-justify: middle;
+    height: 44.4px;
+    font-size: 18px;
+    min-width: 200px;
+    border: none;
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 14px;
+    color: var(--off-white);
+}
+
+.pot-btn1:hover , .pot-btn2:hover {
+    text-decoration: none;
+    background-color: var(--dark-primary);
+}
+
+@media (max-width: 574px){
+    .potwierdzenie-btns{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+}

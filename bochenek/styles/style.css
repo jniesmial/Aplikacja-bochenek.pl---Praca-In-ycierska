@@ -1,0 +1,345 @@
+:root {
+    --primary: #b6571e;
+    --dark-primary: #53290F;
+    --off-white: #f9f9f9;
+    --szary: #686868;
+
+}
+
+.logged-user {
+    transform: translateY(-2%);
+    height: 104.44px;
+    margin-left: 20px;
+    display: flex;
+    float:left;
+    align-items: center; /* ustawienie na środku osi pionowej */
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--dark-primary);
+}
+.logged-user button {
+    border: none;
+    background: transparent;
+}
+
+.logged-user button:hover {
+    cursor: pointer;
+}
+
+.logged-user i{
+    color: var(--dark-primary);
+}
+
+.logged-user i {
+    margin-left: 5px;
+    transform: translateY(5%);
+    font-size: 30px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    border-bottom: 5px solid var(--primary);
+    margin-top: -104px;
+    z-index: 10;
+}
+
+nav ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+nav li, .footer li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.button-1 {
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 14px;
+    color: var(--off-white);
+}
+.button-1:hover {
+    background-color: var(--dark-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline var(--off-white);
+}
+
+#logo {
+    float: left;
+    display: block;
+}
+
+#logo img {
+    width: 150px;
+    padding-left: 5px;
+    margin-top: -10px;
+    
+
+}
+
+nav {
+    float: right;
+    padding: 20px 0px 20px 20px; /* Padding: top right bottom ledt */
+    padding-left: 0px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+nav a {
+    color: var(--dark-primary);
+}
+
+#menu-icon {
+    display: none;
+    width: 32px;
+    height: 32px;;
+}
+
+/* -------------- SECTION ONE -------------- */
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 104px 0;
+    position: relative;
+
+    background: url(../images/bg-login-register.jpg) no-repeat;
+    background-color: rgb(180, 180, 180);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode:screen;
+}
+
+#img-1 {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 0 10px black;
+
+}
+
+/* -------------- SECTION TWO -------------- */
+
+.section-two {
+    display: flex;
+    margin: 60px 0px 50px 0px;
+    text-align: center;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-two h1 span {
+    color: var(--primary);
+}
+.section-two .columns {
+    display: flex;
+    margin-top: 50px;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-two .left-column {
+    line-height: 1.3em;
+    flex: 1 1 100px;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 1px;
+    margin: 0px 15px 30px 15px;
+    /* background-color: aqua; */
+}
+
+.section-two .right-column {
+    flex: 1 1 100px;
+    align-items: center;
+}
+.section-two .right-column img {
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+    margin: 20px 15px 0px 15px;
+    width: calc(100% - 30px);
+}
+
+#button-section2 {
+    margin: 25px auto 0 auto;
+    width: 140px;
+    text-align: center;
+}
+
+/* -------------- SECTION THREE-------------- */
+
+.section-three {
+    text-shadow: 0 0 30px black;
+    color: var(--off-white);
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding-top: 50px;
+    background: url(../images/stolnica.jpg) 60% no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode:hue ;
+    display: flex;
+}
+
+.section-three h1 span {
+    color: var(--primary);
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.advantage {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-width: calc(1200px/4 - 20px);
+    max-width: calc(25% - 20px);
+    padding: 15px 0px 15px;
+    box-sizing: border-box;
+    margin-inline: 10px;
+}
+
+.advantage img {
+    margin: 15px auto 15px;
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    color: var(--off-white);
+    padding-top: 15px;
+    background-color: var(--dark-primary);
+    min-height: 100px;
+    margin-bottom: -104px;
+    align-items: center;
+}
+
+.footer-items {
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.footer ul a {
+    color: var(--off-white);
+}
+
+.footer .right {
+    border-left: 5px solid ;
+    padding-left: 14px;
+    
+    text-align: center;
+    align-items: center;
+}
+
+.footer .right hf {
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* ustawianie section_two na landing page w kolumnie  */
+@media only screen and (max-width: 1247px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+/* max-width: 640px 835*/
+@media only screen and (max-width: 1076px) {
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .burger-menu {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .burger-menu span {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        border-radius: 3px;
+    }
+
+    nav ul, nav:active ul{
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: var(--off-white);
+        right: 10px;
+        top: 65px;
+        width: 35%;
+        z-index: 99;
+
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+    }
+}

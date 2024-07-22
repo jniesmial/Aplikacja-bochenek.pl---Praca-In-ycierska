@@ -1,0 +1,94 @@
+.box {
+    padding-top: 50px;
+    min-height: 80vh;
+}
+
+.ofirmie-one, .ofirmie-2, .ofirmie-3 {
+    padding: 20px;
+
+    letter-spacing: 0.1em;
+    line-height: 140%;
+}
+
+/* ????? */
+.wrapper h1 {
+    /* color: var(--primary); */
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+
+.columns1, .columns2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-col1 {
+    flex: 1 1 40px;
+    padding-right: 15px;
+}
+
+.right-col1 {
+    flex: 1 1 10px;
+    padding-top: 15px;
+}
+
+.ofirmie-one img {
+    margin-top: 5px;
+    width: 100%;
+
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+}
+
+.ofirmie-2{
+    padding: 20px;
+}
+
+.zdj-2 {
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.zdj-2 img {
+    width: 100%;
+}
+
+
+.ofirmie-3 img {
+    margin-top: 5px;
+    width: 100%;
+
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+}
+
+.left-col2 {
+    padding-top: 15px;
+    flex: 1 1 10px;
+    padding-right: 15px;
+}
+
+.right-col2 {
+    flex: 1 1 40px;
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0 40px;
+}
+
+h2 span {
+    color: #B6571E;
+}
+
+@media only screen and (max-width: 880px)
+{
+    .columns1, .columns2 {
+        flex-direction: column;
+    }
+}
